@@ -7,7 +7,7 @@ on:
   pull_request:
     branches:
       - wakhare11  # Trigger on PRs to main
-
+  workflow_dispatch:
 jobs:
   cypress-run:
     runs-on: ubuntu-latest  # Use Linux runner
