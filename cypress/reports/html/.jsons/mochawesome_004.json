@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-03-14T14:09:23.315Z",
+    "end": "2025-03-14T14:09:38.908Z",
+    "duration": 15593,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7f0f5825-e60c-44ea-bb0e-2aa6224018ff",
+      "title": "",
+      "fullFile": "cypress\\e2e\\element.cy.js",
+      "file": "cypress\\e2e\\element.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7f2a8aab-17c8-482c-b515-99dba3d815e9",
+          "title": "My First Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "My First Test Case",
+              "fullTitle": "My First Test Suite My First Test Case",
+              "timedOut": null,
+              "duration": 15511,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.config('baseUrl'));\ncy.wait(3000);\ncy.get(\"div[id='SIvCob'] a[href]\").then(elements => {\n  // Loop through all the elements and log their text\n  for (let i = 0; i < elements.length; i++) {\n    //     cy.log(`${elements[i].innerText}`);\n    cy.log(elements[i].innerText);\n  }\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `div[id='SIvCob'] a[href]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `div[id='SIvCob'] a[href]`, but never found it.\n    at Context.eval (webpack://cypress-auto/./cypress/e2e/element.cy.js:5:7)",
+                "diff": null
+              },
+              "uuid": "22aa866b-1ebc-4c32-9e0e-1117bf9401e9",
+              "parentUUID": "7f2a8aab-17c8-482c-b515-99dba3d815e9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "22aa866b-1ebc-4c32-9e0e-1117bf9401e9"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 15511,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

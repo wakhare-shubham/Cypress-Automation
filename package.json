@@ -1,0 +1,27 @@
+{
+  "name": "cypress-auto",
+  "version": "1.0.0",
+  "description": "cypress automation test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "test:headless": "cypress run --headless"
+  },
+  "keywords": [
+    "cypress",
+    "test",
+    "automation"
+  ],
+  "author": "shubham",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.6.1",
+    "cypress-real-events": "^1.13.0"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.2",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}

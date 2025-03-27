@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-03-14T13:59:37.258Z",
+    "end": "2025-03-14T13:59:37.506Z",
+    "duration": 248,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3436367d-58f4-4866-ad85-832fae638bf7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\loginPageTest.cy.js",
+      "file": "cypress\\e2e\\loginPageTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "adab4ffc-7230-46b8-9037-1bb591eeb4b3",
+          "title": "My First Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Stores a string in Cypress.env",
+              "fullTitle": "My First Test Suite Stores a string in Cypress.env",
+              "timedOut": null,
+              "duration": 50,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const myString = 'shubham!';\nCypress.env('sharedString', myString);",
+              "err": {},
+              "uuid": "62b680e4-9f06-4631-a515-0fe7ed63c5f9",
+              "parentUUID": "adab4ffc-7230-46b8-9037-1bb591eeb4b3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Accesses the stored string",
+              "fullTitle": "My First Test Suite Accesses the stored string",
+              "timedOut": null,
+              "duration": 45,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const retrievedString = Cypress.env('sharedString');\ncy.log(retrievedString); // Logs: \"Hello, Cypress!\"",
+              "err": {},
+              "uuid": "8b6b97af-d38f-4e0b-99ee-02059593ef82",
+              "parentUUID": "adab4ffc-7230-46b8-9037-1bb591eeb4b3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "62b680e4-9f06-4631-a515-0fe7ed63c5f9",
+            "8b6b97af-d38f-4e0b-99ee-02059593ef82"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 95,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
