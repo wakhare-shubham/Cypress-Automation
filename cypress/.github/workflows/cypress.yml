@@ -1,0 +1,30 @@
+name: Cypress Tests
+
+on:
+  push:
+    branches:
+      - main  # Trigger tests on push to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger on PRs to main
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest  # Use Linux runner
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'   # Set your Node.js version
+
+      - name: Install dependencies
+        run: |
+          npm install
+
+      - name: Run Cypress tests
+        run: |
+          npx cypress run --browser chrome
