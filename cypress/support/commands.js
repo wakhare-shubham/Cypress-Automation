@@ -7,6 +7,13 @@ import '@shelex/cypress-allure-plugin';
 
 
 
+Cypress.Commands.add('login', (username, password) => {
+    cy.get("#login-form-username").type(username);
+    cy.get("#login-form-password").type(password);
+    cy.get("button").contains("Login").click();
+  });
+
+
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
